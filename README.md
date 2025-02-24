@@ -25,7 +25,7 @@ docker run --rm -v $(pwd)/data:/app/data etl-pipeline
 ### 3. Check the SQLite Database
 After processing, you can find the SQLite database in `data/database.db`. To inspect the data:
 ```sh
-sqlite3 data/database.db "SELECT * FROM your_table_name LIMIT 5;"
+sqlite3 data/database.db "SELECT * FROM titanic LIMIT 5;"
 ```
 
 ## Directory Structure
